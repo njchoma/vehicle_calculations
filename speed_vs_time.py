@@ -58,7 +58,7 @@ def print_results(speed,
     print()
 
 def main():
-    charge_speed = 175 #kW
+    charge_speed = 125 #kW
     battery_capacity = 82 #kWh
     stop_fixed_cost = 3.0/60 # add'l hours per stop
     pct_battery_used = 0.6 # percent (%)
