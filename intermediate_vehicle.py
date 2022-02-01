@@ -126,7 +126,8 @@ if __name__ == "__main__":
     fuel_cost = 4.95
     electricity_cost = 0.16
     tax_rate = 1.07
-    loan_term = 60
+    loan_term = 72
+    apr = 0.0275
     carA = "Model 3"
     carB = "Model 3 SR"
 
@@ -162,6 +163,7 @@ if __name__ == "__main__":
         mpkw = (300 / 91.0),
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 200)
 
     get_costs(
@@ -179,6 +181,7 @@ if __name__ == "__main__":
         mpkw = (350 / 82.0),
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 200)
 
     get_costs(
@@ -196,6 +199,7 @@ if __name__ == "__main__":
         mpkw = (272 / 50.0),
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 200)
 
     get_costs(
@@ -213,6 +217,7 @@ if __name__ == "__main__":
         mpkw = (330 / 82.0),
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 200)
 
     get_costs(
@@ -230,6 +235,7 @@ if __name__ == "__main__":
         mpkw = (405 / 100.0),
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 200)
 
     get_costs(
@@ -245,6 +251,7 @@ if __name__ == "__main__":
         elec_cost = electricity_cost,
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 500)
 
     get_costs(
@@ -260,6 +267,7 @@ if __name__ == "__main__":
         elec_cost = electricity_cost,
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 400)
 
     get_costs(
@@ -277,6 +285,7 @@ if __name__ == "__main__":
         mpkw = (25.0 / 6.3),
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 400)
 
     get_costs(
@@ -294,6 +303,7 @@ if __name__ == "__main__":
         mpkw = (310 / 77.0),
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 200)
 
     get_costs(
@@ -310,6 +320,8 @@ if __name__ == "__main__":
          elec_pct = 0.5,
          mpkw = (42.0 / 15),
          vehicle_life_in_miles = base_vehicle_life,
+         loan_term = loan_term,
+         apr = apr,
          maintenance_per_year = 500)
 
 
@@ -327,6 +339,8 @@ if __name__ == "__main__":
          elec_pct = 0.2,
          mpkw = (47.0 / 16),
          vehicle_life_in_miles = base_vehicle_life,
+         loan_term = loan_term,
+         apr = apr,
          maintenance_per_year = 500)
 
     get_costs(
@@ -342,6 +356,7 @@ if __name__ == "__main__":
         elec_cost = electricity_cost,
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 550)
 
     get_costs(
@@ -357,6 +372,7 @@ if __name__ == "__main__":
         elec_cost = electricity_cost,
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 500)
 
     get_costs(
@@ -372,6 +388,7 @@ if __name__ == "__main__":
         elec_cost = electricity_cost,
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 500)
 
     get_costs(
@@ -387,6 +404,7 @@ if __name__ == "__main__":
         elec_cost = electricity_cost,
         vehicle_life_in_miles = 250000,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 600)
 
     get_costs(
@@ -402,6 +420,7 @@ if __name__ == "__main__":
         elec_cost = electricity_cost,
         vehicle_life_in_miles = base_vehicle_life,
         loan_term = loan_term,
+        apr = apr,
         maintenance_per_year = 800)
 
     cost_compare(all_cars,
@@ -409,5 +428,5 @@ if __name__ == "__main__":
                  carB,
                  loan_term,
                  num_years = int(base_vehicle_life/miles_per_year),
-                 opp_cost_rate = 1.03)
+                 opp_cost_rate = 1.04)
 
